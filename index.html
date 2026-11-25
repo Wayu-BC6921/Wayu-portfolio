@@ -1,67 +1,364 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wayuapplication</title>
+    <title>Wayu Saesow | Developer Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 
-    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Contact</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+            WAYU<span>.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact-btn" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
 </nav>
-<!-- hero section -->
- <div class="container-fluid">
-    <img src="image/Hero 3.png" alt="" width="100%">
- </div>
-<br><br>
-         <!-- ใส่เนื้อหา -->
-         <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <img src="image/Pofile.png" alt="" width="100%" class="rounded">
+
+<!-- HERO SECTION -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-7">
+                <p class="hero-subtitle">
+                    <i class="bi bi-code-slash"></i>
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hello, I'm <br>
+                    <span>Wayu Saesow</span>
+                </h1>
+
+                <h3>Business Computer Student & Developer</h3>
+
+                <p class="hero-description">
+                    ผมมีความสนใจด้านเทคโนโลยีสารสนเทศ
+                    การเขียนโปรแกรม และการพัฒนาเว็บไซต์
+                    พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ
+                    เพื่อสร้างสรรค์ผลงานที่มีคุณภาพ
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary-custom">
+                        View My Work <i class="bi bi-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline-custom">
+                        Contact Me
+                    </a>
                 </div>
-                <div class="col-sm-6">
-                    <h1>Hello, This is My Webpage</h1>
-                    <p width="100%">วัสดีครับ ผมชื่อ วายุ แซ่โซว (Wayu Saesow) นักศึกษาสาขา Business Computer
-                    ผมมีความสนใจด้านเทคโนโลยีสารสนเทศ การเขียนโปรแกรม และการพัฒนาเว็บไซต์ (Web Development) ชื่นชอบการเรียนรู้เทคโนโลยีใหม่ ๆ และการนำความรู้ด้านคอมพิวเตอร์มาสร้างสรรค์ผลงานและแก้ไขปัญหาอย่างเป็นระบบ
-                    ผมมุ่งมั่นพัฒนาทักษะด้าน Programming, Frontend Development, Backend Development และ Database เพื่อก้าวสู่การเป็นนักพัฒนาซอฟต์แวร์ที่มีความสามารถ พร้อมเปิดรับประสบการณ์และความท้าทายใหม่ ๆ อยู่เสมอ</p>
+
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/ta.wayu.7547/" target="_blank" aria-label="Facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="mailto:691340005002-5@ksu.ac.th" aria-label="Email">
+                        <i class="bi bi-envelope"></i>
+                    </a>
                 </div>
             </div>
-         </div>
-         <!-- ใส่footer -->
-         <div class="container-fluid">
-            <footer class="py-3 my-4 border-top text-center text-body-secondary bg-light">
-                <p>&copy; 2026, Wayu saesow, Tel.084-0104610</p>
-            </footer>
-         </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="hero-image-box">
+                    <img src="image/Pofile.png" alt="Wayu Saesow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <span>INTRODUCTION</span>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="row align-items-center g-5">
+            <div class="col-lg-5">
+                <img src="image/Pofile.png" alt="Profile"
+                    class="about-image">
+            </div>
+
+            <div class="col-lg-7">
+                <h3>I'm Wayu Saesow</h3>
+
+                <p class="about-text">
+                    สวัสดีครับ ผมชื่อ วายุ แซ่โซว (Wayu Saesow)
+                    นักศึกษาสาขา Business Computer
+                    ผมมีความสนใจด้านเทคโนโลยีสารสนเทศ
+                    การเขียนโปรแกรม และการพัฒนาเว็บไซต์
+                    (Web Development)
+                </p>
+
+                <p class="about-text">
+                    ผมชื่นชอบการเรียนรู้เทคโนโลยีใหม่ ๆ
+                    และการนำความรู้ด้านคอมพิวเตอร์มาสร้างสรรค์ผลงาน
+                    มุ่งมั่นพัฒนาทักษะ Programming,
+                    Frontend Development, Backend Development
+                    และ Database เพื่อก้าวสู่การเป็น Software Developer
+                </p>
+
+                <div class="about-info">
+                    <p><strong>Name:</strong> Wayu Saesow</p>
+                    <p><strong>Major:</strong> Business Computer</p>
+                    <p><strong>Interest:</strong> Web Development</p>
+                    <p><strong>Position:</strong> Student Developer</p>
+                </div>
+
+                <a href="#contact" class="btn btn-primary-custom">
+                    Let's Talk <i class="bi bi-chat-dots"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills" class="section-padding skills-section">
+    <div class="container">
+        <div class="section-heading">
+            <span>WHAT I CAN DO</span>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-filetype-html"></i>
+                    <h4>HTML & CSS</h4>
+                    <p>การสร้างและออกแบบเว็บไซต์ให้สวยงาม</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-bootstrap"></i>
+                    <h4>Bootstrap</h4>
+                    <p>การพัฒนาเว็บไซต์ Responsive</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-filetype-js"></i>
+                    <h4>JavaScript</h4>
+                    <p>การพัฒนาเว็บไซต์ให้มีลูกเล่นและการโต้ตอบ</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="skill-card">
+                    <i class="bi bi-database"></i>
+                    <h4>Database</h4>
+                    <p>การจัดการและออกแบบฐานข้อมูล</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section-padding">
+    <div class="container">
+        <div class="section-heading">
+            <span>MY RECENT WORK</span>
+            <h2>My <span>Projects</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Portfolio Website</h4>
+                        <p>เว็บไซต์แนะนำตัวและรวบรวมผลงานส่วนตัว</p>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <a href="#contact" class="project-link">
+                            View Project <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Rubber Price Prediction</h4>
+                        <p>ระบบพยากรณ์ราคายางพาราด้วย Machine Learning</p>
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Web</span>
+                        <a href="#contact" class="project-link">
+                            View Project <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="bi bi-database-check"></i>
+                    </div>
+                    <div class="project-content">
+                        <h4>Database System</h4>
+                        <p>ระบบจัดการข้อมูลและฐานข้อมูล</p>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Web</span>
+                        <a href="#contact" class="project-link">
+                            View Project <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section-padding contact-section">
+    <div class="container text-center">
+        <div class="section-heading">
+            <span>GET IN TOUCH</span>
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <p class="contact-description">
+            หากสนใจร่วมงาน แลกเปลี่ยนความรู้
+            หรือพูดคุยเกี่ยวกับเทคโนโลยี
+            สามารถติดต่อผมได้ผ่านช่องทางด้านล่าง
+        </p>
+
+        <div class="contact-items">
+
+            <a href="mailto:your-email@example.com" class="contact-item">
+                <i class="bi bi-envelope-fill"></i>
+                <span>Email Me</span>
+            </a>
+
+            <a href="tel:0840104610" class="contact-item">
+                <i class="bi bi-telephone-fill"></i>
+                <span>084-010-4610</span>
+            </a>
+
+            <a href="https://github.com/" target="_blank" class="contact-item">
+                <i class="bi bi-github"></i>
+                <span>GitHub</span>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container text-center">
+        <a href="#home" class="footer-logo">WAYU<span>.</span></a>
+        <p>Designed & Developed by Wayu Saesow</p>
+        <p class="copyright">
+            &copy; 2026 Wayu Saesow. All Rights Reserved.
+        </p>
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<a href="#home" class="back-to-top" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // ปิดเมนูมือถือเมื่อคลิกลิงก์
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+            const menu = document.querySelector('.navbar-collapse');
+            if (menu.classList.contains('show')) {
+                bootstrap.Collapse.getOrCreateInstance(menu).hide();
+            }
+        });
+    });
+
+    // Highlight เมนูตาม Section
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            if (window.scrollY >= section.offsetTop - 150) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.toggle(
+                'active',
+                link.getAttribute('href') === '#' + current
+            );
+        });
+    });
+</script>
+
 </body>
 </html>
