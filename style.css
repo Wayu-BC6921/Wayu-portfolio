@@ -95,8 +95,8 @@ a {
 .hero-section h1 span,
 .section-heading h2 span {
     background: linear-gradient(90deg, var(--primary), var(--secondary));
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-section h3 {
@@ -453,4 +453,317 @@ a {
     .contact-item {
         width: 100%;
     }
+}
+
+/* EXPERIENCE SECTION */
+.experience-section {
+    background: #0c1423;
+}
+
+.experience-section .section-heading p,
+.achievements-section .section-heading p {
+    color: var(--text);
+    margin-top: 15px;
+}
+
+.experience-card {
+    height: 100%;
+    display: flex;
+    gap: 22px;
+    padding: 30px;
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0,212,255,0.1);
+}
+
+.experience-icon {
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,212,255,0.1);
+    border-radius: 15px;
+}
+
+.experience-icon i {
+    color: var(--primary);
+    font-size: 30px;
+}
+
+.experience-duration {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.experience-content h3 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.experience-content h5 {
+    color: var(--secondary);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.experience-content p {
+    color: var(--text);
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* ACHIEVEMENTS SECTION */
+.achievements-section {
+    background: var(--dark);
+}
+
+.achievement-category {
+    color: white;
+    font-size: 23px;
+    margin: 35px 0 25px;
+    font-weight: 600;
+}
+
+.achievement-category i {
+    color: var(--primary);
+    margin-right: 10px;
+}
+
+.achievement-card {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(0,212,255,0.1);
+}
+
+.achievement-year {
+    min-width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00bfe8, #755cff);
+    border-radius: 15px;
+    color: white;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.achievement-content {
+    flex: 1;
+}
+
+.achievement-content h4 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.achievement-content p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.achievement-tag {
+    display: inline-block;
+    background: rgba(0,212,255,0.1);
+    color: var(--primary);
+    padding: 5px 10px;
+    font-size: 11px;
+    border-radius: 20px;
+    margin: 3px 2px;
+}
+
+.invention-card {
+    flex-direction: column;
+}
+
+.invention-card .achievement-year {
+    width: 75px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+    .experience-card,
+    .achievement-card {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .achievement-category {
+        font-size: 19px;
+    }
+
+    .achievement-year {
+        width: 65px;
+    }
+}
+
+/* ===== EDUCATION SECTION ===== */
+
+.education-section {
+    background: #0c1423;
+}
+
+.education-section .section-heading p {
+    color: #cbd5e1;
+    margin-top: 15px;
+}
+
+.education-card {
+    height: 100%;
+    display: flex;
+    gap: 22px;
+    padding: 30px;
+    background: #111a2b;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-8px);
+    border-color: #00d4ff;
+    box-shadow: 0 10px 30px rgba(0,212,255,0.12);
+}
+
+/* ICON */
+
+.education-icon {
+    min-width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,212,255,0.12);
+    border-radius: 16px;
+}
+
+.education-icon i {
+    font-size: 32px;
+    color: #00d4ff;
+}
+
+/* CONTENT */
+
+.education-content {
+    flex: 1;
+}
+
+.education-level {
+    display: inline-block;
+    color: #00d4ff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.education-content h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.education-content h4 {
+    color: #e2e8f0;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.education-content h4 i {
+    color: #00d4ff;
+    margin-right: 5px;
+}
+
+.education-details {
+    padding: 15px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 12px;
+}
+
+.education-details p {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.education-details p:last-child {
+    margin-bottom: 0;
+}
+
+.education-details strong {
+    color: #00d4ff;
+}
+
+/* GPA */
+
+.gpa-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: linear-gradient(
+        90deg,
+        rgba(0,212,255,0.12),
+        rgba(117,92,255,0.12)
+    );
+    border: 1px solid rgba(0,212,255,0.2);
+    border-radius: 12px;
+}
+
+.gpa-box span {
+    color: #cbd5e1;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.gpa-box strong {
+    color: #00d4ff;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .education-card {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .education-content h3 {
+        font-size: 19px;
+    }
+
+    .education-content h4 {
+        font-size: 15px;
+    }
+
 }
